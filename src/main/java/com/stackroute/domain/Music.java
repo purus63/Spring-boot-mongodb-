@@ -3,10 +3,7 @@ package com.stackroute.domain;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @Document
@@ -16,6 +13,8 @@ import javax.persistence.Table;
 public class Music {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @org.springframework.data.annotation.Id
     int trackId;
     String trackName;
     String comment;

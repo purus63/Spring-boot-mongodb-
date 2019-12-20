@@ -17,6 +17,6 @@ public class CLR implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        musicRepository.save(new Music(12, "Sone Lagde", "From Battle Studies"));
+       musicRepository.save(new Music(12, "Sone Lagde", "From Battle Studies"));
     }
 }
